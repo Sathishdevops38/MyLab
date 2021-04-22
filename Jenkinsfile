@@ -2,7 +2,7 @@ pipeline{
     //Directives
     agent any
     tools {
-        maven 'maven'
+        maven 'M2_HOME'
     }
     environment{
        ArtifactId = readMavenPom().getArtifactId()
